@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-world</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/style2.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+    <!--헤더시작-->
+    <header>
+        <!--이동/로그인 영역 시작-->
+        <div class="head01_wrap" style="background-color: #fff;">
+            <div class="head01">
+
+                <!--이동 사이트(이월드/대구타워)영역 시작-->
+                <div class="site">
+                    <a href="E-world_main.html">
+                        <img src="images/header_small_logo_01.png" alt="eworld small logo">
+                        이월드
+                    </a>
+                    |
+                    <a href="#">
+                        <img src="images/header_small_logo_02.png" alt="Daegu towel small logo" style="margin-left: 10px;">
+                        대구타워
+                    </a>
+                </div>
+                <!--이동 사이트(이월드/대구타워)영역 끝-->
+
+                <!--로그인 영역 시작-->
+                <div class="login">
+                    <a href="#" style="margin-right: 10px;">로그인</a>
+                    |
+                    <a href="#" style="margin-left: 10px;">회원가입</a>
+                </div>
+                <!--로그인 영역 끝-->
+
+            </div>
+        </div>
+        <!--이동/로그인 영역 끝-->
+
+
+        <!--헤더메뉴 영역 시작-->
+        <div class="head02">
+            <div class="head02_wrap">
+
+                <!--로고 시작-->
+                <div class="logo">
+                    <img src="images/logo_01.png" alt="E-world Main LOGO" onclick="location.href='E-world_main.html'">
+                </div>
+                <!--로고 끝-->
+
+                <div id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!--header_menu시작-->
+                <div class="header_menu">
+                    <ul>
+                        <li class="hm info">
+                            <a href="#" class="list">이월드 안내</a>
+
+                            <ul class="head_menu2">
+                                <li><a href="#">운영시간</a></li>
+                                <li><a href="#">편의시설</a></li>
+                                <li><a href="#">교통/주차안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm facilities">
+                            <a href="attraction.html" class="list">놀이시설</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">안내지도</a></li>
+                                <li><a href="attraction.html">어트랙션</a></li>
+                                <li><a href="#">83타워 스카이가든</a></li>
+                                <li><a href="#">운휴정보</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm charge">
+                            <a href="charge.html" class="list">요금/연간회원</a>
+                            <ul class="head_menu2">
+                                <li><a href="charge.html">이용요금</a></li>
+                                <li><a href="#">단체이용</a></li>
+                                <li><a href="#">연간회원</a></li>
+                                <li><a href="#">할인혜택</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm festival">
+                            <a href="#" class="list">행사와 축제</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">공연정보</a></li>
+                                <li><a href="#">체험프로그램</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm question">
+                            <a href="#" class="list">고객의 소리</a>
+                            <ul class="head_menu2" style="border-right: none;">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">불편사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--header_menu끝-->
+
+                <!--이용시간 시작-->
+                <div class="time">
+                    <img src="images/ic_time.svg" alt="">
+                    <p>오늘 이용시간<br><span>11:30 - 20:00</span></p>
+                </div>
+                <!--이용시간 끝-->
+
+            </div>
+        </div>
+        <!--헤더메뉴 영역 끝-->
+    </header>
+    <!--헤더시작-->
+
+    <!--내용 시작-->
+    <contents>
+        <div class="top">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>TOP</p>
+        </div>
+        <!--배너영역 시작-->
+        <div class="ATcon_01" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/attraction/sub_banner.jpg);">
+
+            <div class="wrap">
+                <div class="sub_txt">
+                    <p><a href="E-world_main.html">HOME</a> |</p>
+                    <select name="Menu" id="Menu_list" onchange="window.open(value,'_self');">
+                        <option value="attraction.html">이월드 안내</option>
+                        <option value="attraction.html" selected>놀이시설</option>
+                        <option value="charge.html">요금/연간회원</option>
+                        <option value="attraction.html">행사와 축제</option>
+                        <option value="attraction.html">고객의 소리</option>
+                    </select>
+
+                    <select name="attraction" id="Attraction_list" onchange="window.open(value,'_self');">
+                        <option value="attraction.html">안내지도</option>
+                        <option value="attraction.html" selected>어트랙션</option>
+                        <option value="attraction.html">운휴정보</option>
+                    </select>
+                </div>
+
+                <div class="sub_txt2">
+                    <h1>어트랙션 안내</h1>
+                </div>
+            </div>
+        </div>
+        <!--배너영역 끝-->
+
+        <!--검색영역 시작-->
+        <div class="ATcon_02">
+            <h1 id="Msearch">검색</h1>
+            <form action="#" id="search">
+                <input type="text" placeholder="어트랙션 이름검색" id="keyword">
+                <button type="submit">검색<i class="fas fa-search"></i></button>
+            </form>
+            <hr align="center" style="color: #fff; border: 1px solid;">
+
+            <h1>조건 검색</h1>
+            <select name="Menu" class="condition" id="Attraction">
+                <option value="All" selected>전체보기</option>
+                <option value="FantasyWorld">판타지월드</option>
+                <option value="DynamicWorld">다이나믹월드</option>
+                <option value="AdventureWorld">어드벤처월드</option>
+                <option value="MagicWorld">매직월드</option>
+                <option value="83TowelSkyGarden">83타워스카이가든</option>
+            </select>
+
+            <div class="height">
+                키
+            </div>
+
+            <div class="bar">
+                <small>※마우스로 드래그해보세요.( 키보드 좌우이동 가능합니다. )※</small>
+                <input type="range" min="80" max="190" value="0" step="10" id="slider">
+                <div id="selector">
+                    <div class="selectbtn" id="selectvalue"></div>
+                </div>
+
+                <datalist id="tickmarks">
+                    <option value="80" label="80cm" style="display: inline-block;width: 5%;"></option>
+                    <option value="90" style="display: inline-block;width: 8.5%;"></option>
+                    <option value="100" style="display: inline-block;width: 8%;"></option>
+                    <option value="110" style="display: inline-block;width: 5%;"></option>
+                    <option value="120" style="display: inline-block;width: 5%;"></option>
+                    <option value="130" style="display: inline-block;width: 5%;"></option>
+                    <option value="140" label="135cm" style="display: inline-block;width: 8%;"></option>
+                    <option value="150" style="display: inline-block;width: 8%;"></option>
+                    <option value="160" style="display: inline-block;width: 8%;"></option>
+                    <option value="170" style="display: inline-block;width: 8%;"></option>
+                    <option value="180" style="display: inline-block;width: 8.5%;"></option>
+                    <option value="190" label="190cm" style="display: inline-block;width: 5%;"></option>
+                </datalist>
+            </div>
+
+            <i class="fas fa-sort-down"></i>
+            <i class="fas fa-sort-up"></i>
+        </div>
+        <!--검색영역 끝-->
+
+        <!--놀이기구 영역 시작-->
+        <div class="ATcon_03">
+
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_01_plaza.jpeg" alt="">
+
+                <div class="text fantasy">
+                    <h1>만남의 광장</h1>
+                    <small>(Meeting Plaza)</small>
+                    <p class="limit"></p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_02_hartplaza.jpeg" alt="">
+
+                <div class="text">
+                    <h1>하트 광장</h1>
+                    <small>(Hart Plaza)</small>
+                    <p class="limit"></p>
+                    <br>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_03skyway.jpeg" alt="">
+
+                <div class="text">
+                    <h1>스카이웨이</h1>
+                    <small>(Skyway)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_04tram.jpeg" alt="">
+
+                <div class="text">
+                    <h1>트램</h1>
+                    <small>(Tram)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_05ghostadventure.jpeg" alt="">
+
+                <div class="text">
+                    <h1>고스트어드벤처</h1>
+                    <small>(Ghost Adventure)</small>
+                    <p class="limit">키 100Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_06frumeride.jpeg" alt="">
+
+                <div class="text">
+                    <h1>후룸라이드</h1>
+                    <small>(Frumeride)</small>
+                    <p class="limit">키 100Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction fantasy">
+
+                <div class="rocation" style="background-color: rgba(174, 30, 35 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>판타지월드</p>
+                </div>
+
+                <img src="images/attraction/FantazyWorld_07aladdin.jpeg" alt="">
+
+                <div class="text">
+                    <h1>알라딘</h1>
+                    <small>(Aladdin)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!--판타지월드 끝-->
+
+            <!--다이나믹월드 시작-->
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_01viking.jpeg" alt="">
+
+                <div class="text">
+                    <h1>바이킹</h1>
+                    <small>(Viking)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_02tambourine.jpeg" alt="">
+
+                <div class="text">
+                    <h1>탬버린</h1>
+                    <small>(Tambourine)</small>
+                    <p class="limit">키 140Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_03baloonrace.jpeg" alt="">
+
+                <div class="text">
+                    <h1>벌룬레이스</h1>
+                    <small>(Baloonrace)</small>
+                    <p class="limit">키 100Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_04ranger.jpeg" alt="">
+
+                <div class="text">
+                    <h1>레인저</h1>
+                    <small>(Ranger)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_05hurricane.jpeg" alt="">
+
+                <div class="text">
+                    <h1>허리케인</h1>
+                    <small>(Hurricane)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_06skycycle.jpeg" alt="">
+
+                <div class="text">
+                    <h1>스카이사이클</h1>
+                    <small>(Skycycle)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_07megaswing360.jpeg" alt="">
+
+                <div class="text">
+                    <h1>메가스윙360</h1>
+                    <small>(Mega Swing360)</small>
+                    <p class="limit">키 135Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction dynamic">
+
+                <div class="rocation" style="background-color: rgba(65, 40, 102 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>다이나믹월드</p>
+                </div>
+
+                <img src="images/attraction/DynamicWorld_08airrace.jpeg" alt="">
+
+                <div class="text">
+                    <h1>에어레이스</h1>
+                    <small>(Airrace)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!--다이나믹월드 끝-->
+
+            <!--어드벤처월드 시작-->
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_01bumpercar.jpeg" alt="범퍼카">
+
+                <div class="text">
+                    <h1>범퍼카</h1>
+                    <small>(Bumpercar)</small>
+                    <p class="limit">키 120Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_02jetrace.jpeg" alt="제트레이스">
+
+                <div class="text">
+                    <h1>제트레이스</h1>
+                    <small>(Jetrace)</small>
+                    <p class="limit">키 110Cm 이상 탑승가능</p>
+                    <p class="limit2">( 90cm 이상 ~ 110cm 미만 보호자 동승 )</p>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_03boomerang.jpeg" alt="부메랑">
+
+                <div class="text">
+                    <h1>부메랑</h1>
+                    <small>(Boomerang)</small>
+                    <p class="limit">키 140Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_04musicexpress.jpeg" alt="범퍼카">
+
+                <div class="text">
+                    <h1>뮤직익스프레스</h1>
+                    <small>(Musicexpress)</small>
+                    <p class="limit">키 100Cm 이상 탑승가능</p>
+                    <p class="limit2">( 100cm이상 120cm미만 보호자 동승 )</p>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_05topspin.jpeg" alt="탑스핀">
+
+                <div class="text">
+                    <h1>탑스핀</h1>
+                    <small>(Topspin)</small>
+                    <p class="limit">키 140Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_06camelback.jpeg" alt="카멜백">
+
+                <div class="text">
+                    <h1>카멜백</h1>
+                    <small>(Camelback)</small>
+                    <p class="limit">키 110Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_07coinballenpark.jpeg" alt="범퍼카">
+
+                <div class="text">
+                    <h1>코인야구장</h1>
+                    <small>(Coinballenpark)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction adventure">
+
+                <div class="rocation" style="background-color: rgba(138, 37, 99 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>어드벤처월드</p>
+                </div>
+
+                <img src="images/attraction/AdventureWorld_08zoopark.jpg" alt="동물농장">
+
+                <div class="text">
+                    <h1>동물농장</h1>
+                    <small>(zoopark)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!--어드벤처월드 끝-->
+
+            <!--매직월드 시작-->
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_01jumpingflog.jpeg" alt="개구리점프">
+
+                <div class="text">
+                    <h1>개구리점프</h1>
+                    <small>(Jumping Flog)</small>
+                    <p class="limit">키 90Cm 이상 130Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_02magictrain.jpeg" alt="매직열차">
+
+                <div class="text">
+                    <h1>매직열차</h1>
+                    <small>(Magic Train)</small>
+                    <p class="limit">키 110Cm 이상 탑승가능</p>
+                    <p class="limit2">( 90cm 이상 ~ 110cm 미만 보호자 동승 )</p>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_03flyingelephant.jpeg" alt="날으는 코끼리">
+
+                <div class="text">
+                    <h1>날으는 코끼리</h1>
+                    <small>(Flying Elephant)</small>
+                    <p class="limit">키 90Cm 이상 130Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_04miniviking.jpeg" alt="미니바이킹">
+
+                <div class="text">
+                    <h1>미니바이킹</h1>
+                    <small>(Mini Viking)</small>
+                    <p class="limit">키 90Cm 이상 130Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_05minicarracing.jpeg" alt="미니카레이싱">
+
+                <div class="text">
+                    <h1>미니카레이싱</h1>
+                    <small>(Mini Car Racing)</small>
+                    <p class="limit">키 90Cm 이상 130Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_06sweetycup.jpeg" alt="스위티컵">
+
+                <div class="text">
+                    <h1>스위티컵</h1>
+                    <small>(Sweety Cup)</small>
+                    <p class="limit">키 100Cm 이상 탑승가능</p>
+                    <p class="limit2">( 90cm이상 ~ 100cm 미만 보호자 동승 )</p>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_07cocomongairplane.jpeg" alt="코코몽 비행선">
+
+                <div class="text">
+                    <h1>코코몽 비행선</h1>
+                    <small>(Cocomong Airplane)</small>
+                    <p class="limit">키 90Cm 이상 110Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_08ninjaturtles.jpeg" alt="닌자거북이">
+
+                <div class="text">
+                    <h1>닌자거북이</h1>
+                    <small>(Ninja Turtles)</small>
+                    <p class="limit">키 110Cm 이상 탑승가능</p>
+                    <p class="limit2">( 90cm 이상 ~ 100cm 미만 보호자 동승 )</p>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_09cocomongferriswheel.jpeg" alt="코코몽 관람차">
+
+                <div class="text">
+                    <h1>코코몽 관람차</h1>
+                    <small>(Cocomong Ferriswheel)</small>
+                    <p class="limit">키 90Cm 이상 130Cm 미만 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_10merrygoround.jpeg" alt="회전목마">
+
+                <div class="text">
+                    <h1>회전목마</h1>
+                    <small>(Merry Go Round)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="attraction magic">
+
+                <div class="rocation" style="background-color: rgba(44, 22, 9 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/MagicWorld_11andersenhouse.jpeg" alt="안데르센하우스">
+
+                <div class="text">
+                    <h1>안데르센하우스</h1>
+                    <small>(Andersen House)</small>
+                    <p class="limit">전체이용가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!--매직월드 끝-->
+
+            <!--83타워스카이가든 시작-->
+            <div class="attraction skygarden">
+
+                <div class="rocation" style="background-color: rgba(237, 146, 73 ,0.7);">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>매직월드</p>
+                </div>
+
+                <img src="images/attraction/83TowelSkyGarden_01skydrop.JPEG.jpeg" alt="야놀자스카이드롭">
+
+                <div class="text">
+                    <h1>야놀자스카이드롭</h1>
+                    <small>(Sky Drop)</small>
+                    <p class="limit">키 125Cm 이상 탑승가능</p>
+                    <br>
+                    <br>
+                    <p>
+                        <a href="#">자세히보기<i class="fas fa-chevron-right"></i></a>
+                    </p>
+                </div>
+            </div>
+            <!--83타워스카이가든 끝-->
+
+            <div class="empty">
+                <h1>" 검색 결과가 없습니다. "</h1>
+                <small>- - - 조건 검색을 이용해보세요 - - - </small>
+            </div>
+        </div>
+        <!--놀이기구 영역 끝-->
+    </contents>
+    <!--내용 끝-->
+
+    <!--엔딩 시작-->
+    <footer>
+        <div class="foot_wrap">
+            <div class="sns">
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <img src="images/ico_naverblog.png" alt="Naver blog icon">
+                    <img src="images/ico_kakaotalk.png" alt="kakao logo icon">
+                </div>
+
+                <div class="btn" id="btn1">
+                    <a href="#">채용/아르바이트 모집</a>
+                </div>
+
+                <div class="btn" id="btn2">
+                    <a href="#">제휴/입점업체 문의</a>
+                </div>
+
+            </div>
+            <div class="information">
+                <p>대구광역시 달서구 두류공원로 200 (주)이월드 l 종합안내전화 053-620-0001 l 연간회원문의 053-620-0100</p>
+                <p>대표이사 : 유병천 l 사업자등록번호 503-81-68487 l 통신판매신고번호 제2011-대구달서-0301호</p>
+                <p>COPYRIGHTⓒ E-WORLD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <!--엔딩 끝-->
+</body>
+
+
+</html>

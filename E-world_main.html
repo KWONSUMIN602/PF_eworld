@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-world</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.2/jquery-migrate.min.js"></script>-->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="js/slick.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+</head>
+
+<body>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+    </script>
+    <!--헤더시작-->
+    <header>
+        <!--이동/로그인 영역 시작-->
+        <div class="head01_wrap" style="background-color: #fff;">
+            <div class="head01">
+
+                <!--이동 사이트(이월드/대구타워)영역 시작-->
+                <div class="site">
+                    <a href="E-world_main.html">
+                        <img src="images/header_small_logo_01.png" alt="eworld small logo">
+                        이월드
+                    </a>
+                    |
+                    <a href="#">
+                        <img src="images/header_small_logo_02.png" alt="Daegu towel small logo" style="margin-left: 10px;">
+                        대구타워
+                    </a>
+                </div>
+                <!--이동 사이트(이월드/대구타워)영역 끝-->
+
+                <!--로그인 영역 시작-->
+                <div class="login">
+                    <a href="#" style="margin-right: 10px;">로그인</a>
+                    |
+                    <a href="#" style="margin-left: 10px;">회원가입</a>
+                </div>
+                <!--로그인 영역 끝-->
+
+            </div>
+        </div>
+        <!--이동/로그인 영역 끝-->
+
+
+        <!--헤더메뉴 영역 시작-->
+        <div class="head02">
+            <div class="head02_wrap">
+
+                <!--로고 시작-->
+                <div class="logo">
+                    <img src="images/logo_01.png" alt="E-world Main LOGO" onclick="location.href='E-world_main.html'">
+                </div>
+                <!--로고 끝-->
+
+                <div id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!--header_menu시작-->
+                <div class="header_menu">
+                    <ul>
+                        <li class="hm info">
+                            <a href="#" class="list">이월드 안내</a>
+
+                            <ul class="head_menu2">
+                                <li><a href="#">운영시간</a></li>
+                                <li><a href="#">편의시설</a></li>
+                                <li><a href="#">교통/주차안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm facilities">
+                            <a href="attraction.html" class="list">놀이시설</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">안내지도</a></li>
+                                <li><a href="attraction.html">어트랙션</a></li>
+                                <li><a href="#">83타워 스카이가든</a></li>
+                                <li><a href="#">운휴정보</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm charge">
+                            <a href="charge.html" class="list">요금/연간회원</a>
+                            <ul class="head_menu2">
+                                <li><a href="charge.html">이용요금</a></li>
+                                <li><a href="#">단체이용</a></li>
+                                <li><a href="#">연간회원</a></li>
+                                <li><a href="#">할인혜택</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm festival">
+                            <a href="#" class="list">행사와 축제</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">공연정보</a></li>
+                                <li><a href="#">체험프로그램</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm question">
+                            <a href="#" class="list">고객의 소리</a>
+                            <ul class="head_menu2" style="border-right: none;">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">불편사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--header_menu끝-->
+
+                <!--이용시간 시작-->
+                <div class="time">
+                    <img src="images/ic_time.svg" alt="">
+                    <p>오늘 이용시간<br><span>11:30 - 20:00</span></p>
+                </div>
+                <!--이용시간 끝-->
+
+            </div>
+        </div>
+        <!--헤더메뉴 영역 끝-->
+    </header>
+    <!--헤더시작-->
+
+    <!--내용 시작-->
+    <contents>
+        <div class="top">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>TOP</p>
+        </div>
+        <!--배너 영역 시작-->
+        <div class="con_01" id="web_banner">
+            <div class="banner">
+                <div><a href="#" style="background-image: url(images/MAIN_Banner_01.jpeg); background-repeat: no-repeat;background-size: cover; background-position: center;">1</a></div>
+                <div><a href="#" style="background-image: url(images/MAIN_Banner_02.jpeg); background-repeat: no-repeat;background-size: cover; background-position: center;">2</a></div>
+                <div><a href=" #" style="background-image: url(images/MAIN_Banner_03.jpg); background-repeat: no-repeat;background-size: cover; background-position: center;">3</a></div>
+            </div>
+        </div>
+
+        <div class="con_01" id="mobile_banner">
+            <div class="banner">
+                <div><a href="#" style="background-image: url(images/MOBILE_MAIN_001.jpeg); background-repeat: no-repeat;background-size: cover; background-position: center;width: 100%;">1</a></div>
+                <div><a href="#" style="background-image: url(images/MOBILE_MAIN_002.jpeg); background-repeat: no-repeat;background-size: cover; background-position: center;width: 100%;">2</a></div>
+                <div><a href=" #" style="background-image: url(images/MOBILE_MAIN_003.jpeg); background-repeat: no-repeat;background-size: cover; background-position: center;">3</a></div>
+            </div>
+        </div>
+        <!--배너 영역 끝-->
+
+        <!--스마트 예약 시작-->
+        <div class=" con_02">
+
+            <!--안전 알림 배너 시작-->
+            <div class="notice" style="background-image: url(images/corona.jpg);" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true"></div>
+
+            <!--안전 알림 배너 끝-->
+
+            <div class="con2_wrap" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+                <!--스마트 예약 시작-->
+                <div class="smart_reservation">
+                    <h1>스마트 예약</h1>
+
+                    <div>
+                        <i class="fas fa-ticket-alt"></i>
+                        <a href="#">이용권</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-users"></i>
+                        <a href="#">단체회원</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-calendar-check"></i>
+                        <a href="#">체험 프로그램</a>
+                    </div>
+
+                    <div>
+                        <i class="fas fa-gifts"></i>
+                        <a href="#">스페셜 패키지</a>
+                    </div>
+                </div>
+                <!--스마트 예약 끝-->
+
+                <!--온라인 스토어 시작-->
+                <div class="online_store" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+                    <h1>온라인 스토어</h1>
+                    <img src="images/onlinestore_01.jpg" alt="" style="width: 100%;">
+                </div>
+                <!--온라인 스토어 끝-->
+            </div>
+        </div>
+        <!--스마트 예약 끝-->
+
+        <!--할인혜택 시작-->
+        <div class="con_03" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+            <div class="con3_wrap">
+
+                <h1>저렴하게 즐기는 할인 혜택!</h1>
+
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image: url(images/discount_01_kt.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_02_skt.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_03_lg.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_04_HBD.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_05.jpeg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_06.jpeg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_07.jpg); background-repeat: no-repeat; background-size: cover;"></div>
+                        <div class="swiper-slide" style="background-image: url(images/discount_08.jpeg); background-repeat: no-repeat; background-size: cover;"></div>
+                    </div>
+
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next" style="color: #fff;"></div>
+                    <div class="swiper-button-prev" style="color: #fff;"></div>
+                </div>
+
+                <div class="more">
+                    <i class="fas fa-plus"></i>
+                    더 많은 할인 혜택보기
+                </div>
+
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--할인혜택 끝-->
+
+        <!--어트랙션 시작-->
+        <div class="con_04" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+            <div class="con4_wrap">
+
+                <h1>스릴만점 이월드 어트랙션!</h1>
+
+                <div class="attraction_icon">
+                    <div class="AT" onclick="location.href='attraction.html'">
+                        <img src="images/play01_img01.png" alt="">
+                        <p>판타지월드</p>
+                    </div>
+
+                    <div class="AT" onclick="location.href='attraction.html'">
+                        <img src="images/play01_img02.png" alt="">
+                        <p>다이나믹월드</p>
+                    </div>
+
+                    <div class="AT" onclick="location.href='attraction.html'">
+                        <img src="images/play01_img03.png" alt="">
+                        <p>어드벤처월드</p>
+                    </div>
+
+                    <div class="AT" onclick="location.href='attraction.html'">
+                        <img src="images/play01_img04.png" alt="">
+                        <p>매직월드</p>
+                    </div>
+
+                    <div class="AT" onclick="location.href='attraction.html'">
+                        <img src="images/play01_img09.png" alt="">
+                        <p>83타워스카이가든</p>
+                    </div>
+                </div>
+
+                <div class="map"></div>
+
+                <div class="box">
+                    <div class="more2" style="margin-right: 2%;">주변 시설 둘러보기</div>
+                    <div class="more2" style="margin-left: 2%;">운휴 정보 보기</div>
+                </div>
+
+            </div>
+        </div>
+        <!--어트랙션 끝-->
+
+        <!--이색체험프로그램 시작-->
+        <div class="con_05" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+            <div class="con5_wrap">
+
+                <h1>색다른 체험 프로그램!</h1>
+
+                <div class="imgbox">
+                    <div class="program" style="background-image: url(images/program01.jpg); background-repeat: no-repeat; background-size: contain;"></div>
+                    <div class="program" style="background-image: url(images/program02.jpg); background-repeat: no-repeat; background-size: contain;"></div>
+                    <div class="program" style="background-image: url(images/program03.jpg); background-repeat: no-repeat; background-size: contain;"></div>
+                </div>
+
+            </div>
+        </div>
+        <!--이색체험프로그램 끝-->
+
+        <!--이벤트 시작-->
+        <div class="con_06" data-aos="fade-up" data-aos-duration=" 2000 " data-aos-delay="100" data-aos-once="true">
+            <div class="con6_wrap">
+                <h1>재미와 행복을 주는 이벤트~!</h1>
+                <div class="imgbox2">
+                    <img src="images/event_01.png" alt="">
+                    <img src="images/event_02.jpg" alt="">
+                    <img src="images/event_03.jpeg" alt="">
+                    <img src="images/event_04.jpeg" alt="">
+                    <img src="images/event_05.jpg" alt="">
+                    <img src="images/event_06.jpg" alt="">
+                    <img src="images/event_07.jpg" alt="">
+                    <img src="images/event_08.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--이벤트 끝-->
+
+    </contents>
+    <!--내용 끝-->
+
+    <!--엔딩 시작-->
+    <footer>
+        <div class="foot_wrap">
+            <div class="sns">
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <img src="images/ico_naverblog.png" alt="Naver blog icon">
+                    <img src="images/ico_kakaotalk.png" alt="kakao logo icon">
+                </div>
+
+                <div class="btn" id="btn1">
+                    <a href="#">채용/아르바이트 모집</a>
+                </div>
+
+                <div class="btn" id="btn2">
+                    <a href="#">제휴/입점업체 문의</a>
+                </div>
+
+            </div>
+            <div class="information">
+                <p>대구광역시 달서구 두류공원로 200 (주)이월드 l 종합안내전화 053-620-0001 l 연간회원문의 053-620-0100</p>
+                <p>대표이사 : 유병천 l 사업자등록번호 503-81-68487 l 통신판매신고번호 제2011-대구달서-0301호</p>
+                <p>COPYRIGHTⓒ E-WORLD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <!--엔딩 끝-->
+</body>
+<script src="js/style.js"></script>
+
+</html>

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<meta charset="UTF-8">
+<title>E-world</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="js/style2.js" type="text/javascript"></script>
+
+<body>
+    <!--헤더시작-->
+    <header>
+        <!--이동/로그인 영역 시작-->
+        <div class="head01_wrap" style="background-color: #fff;">
+            <div class="head01">
+
+                <!--이동 사이트(이월드/대구타워)영역 시작-->
+                <div class="site">
+                    <a href="E-world_main.html">
+                        <img src="images/header_small_logo_01.png" alt="eworld small logo">
+                        이월드
+                    </a>
+                    |
+                    <a href="#">
+                        <img src="images/header_small_logo_02.png" alt="Daegu towel small logo" style="margin-left: 10px;">
+                        대구타워
+                    </a>
+                </div>
+                <!--이동 사이트(이월드/대구타워)영역 끝-->
+
+                <!--로그인 영역 시작-->
+                <div class="login">
+                    <a href="#" style="margin-right: 10px;">로그인</a>
+                    |
+                    <a href="#" style="margin-left: 10px;">회원가입</a>
+                </div>
+                <!--로그인 영역 끝-->
+
+            </div>
+        </div>
+        <!--이동/로그인 영역 끝-->
+
+
+        <!--헤더메뉴 영역 시작-->
+        <div class="head02">
+            <div class="head02_wrap">
+
+                <!--로고 시작-->
+                <div class="logo">
+                    <img src="images/logo_01.png" alt="E-world Main LOGO" onclick="location.href='E-world_main.html'">
+                </div>
+                <!--로고 끝-->
+
+                <div id="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <!--header_menu시작-->
+                <div class="header_menu">
+                    <ul>
+                        <li class="hm info">
+                            <a href="#" class="list">이월드 안내</a>
+
+                            <ul class="head_menu2">
+                                <li><a href="#">운영시간</a></li>
+                                <li><a href="#">편의시설</a></li>
+                                <li><a href="#">교통/주차안내</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm facilities">
+                            <a href="attraction.html" class="list">놀이시설</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">안내지도</a></li>
+                                <li><a href="attraction.html">어트랙션</a></li>
+                                <li><a href="#">83타워 스카이가든</a></li>
+                                <li><a href="#">운휴정보</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm charge">
+                            <a href="#" class="list">요금/연간회원</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">이용요금</a></li>
+                                <li><a href="#">단체이용</a></li>
+                                <li><a href="#">연간회원</a></li>
+                                <li><a href="#">할인혜택</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm festival">
+                            <a href="#" class="list">행사와 축제</a>
+                            <ul class="head_menu2">
+                                <li><a href="#">공연정보</a></li>
+                                <li><a href="#">체험프로그램</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="hm question">
+                            <a href="#" class="list">고객의 소리</a>
+                            <ul class="head_menu2" style="border-right: none;">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">문의</a></li>
+                                <li><a href="#">불편사항</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--header_menu끝-->
+
+                <!--이용시간 시작-->
+                <div class="time">
+                    <img src="images/ic_time.svg" alt="">
+                    <p>오늘 이용시간<br><span>11:30 - 20:00</span></p>
+                </div>
+                <!--이용시간 끝-->
+
+            </div>
+        </div>
+        <!--헤더메뉴 영역 끝-->
+    </header>
+    <!--헤더시작-->
+
+    <!--내용 시작-->
+    <contents>
+        <div class="top">
+            <i class="fas fa-arrow-circle-up"></i>
+            <p>TOP</p>
+        </div>
+        <!--배너영역 시작-->
+        <div class="ATcon_01" style="background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),url(images/charge/sub_banner.jpg);">
+
+            <div class="wrap">
+                <div class="sub_txt">
+                    <p><a href="E-world_main.html">HOME</a> |</p>
+                    <select name="Menu" id="Menu_list" onchange="window.open(value,'_self');">
+                        <option value="charge.html">이월드 안내</option>
+                        <option value="attraction.html">놀이시설</option>
+                        <option value="charge.html" selected>요금/연간회원</option>
+                        <option value="charge.html">행사와 축제</option>
+                        <option value="charge.html">고객의 소리</option>
+                    </select>
+
+                    <select name="attraction" id="Attraction_list" onchange="window.open(value,'_self');">
+                        <option value="charge.html">안내지도</option>
+                        <option value="charge.html" selected>이용요금</option>
+                        <option value="charge.html">단체이용</option>
+                        <option value="charge.html">연간회원</option>
+                        <option value="charge.html">할인혜택</option>
+                    </select>
+                </div>
+
+                <div class="sub_txt2">
+                    <h1>이용요금 안내</h1>
+                </div>
+            </div>
+        </div>
+        <!--배너영역 끝-->
+
+        <!--입장요금안내 시작-->
+        <div class="ticket_01">
+            <div class="title">
+                <h1><span>입장요금안내</span></h1>
+            </div>
+
+            <div class="entrance">
+                <div class="hole H01"></div>
+                <div class="hole H02"></div>
+                <img src="images/charge/icon_character.png" alt="">
+
+                <div class="ET_text">
+                    <div class="tickettitle">
+                        <h1>입장권</h1>
+                    </div>
+
+                    <div class="ticketcontent">
+                        <p>이월드 입장</p>
+                        <p>+</p>
+                        <p>무료공연관람</p>
+                        <p>+</p>
+                        <p>동물농장 관람</p>
+                    </div>
+                </div>
+
+                <div class="centerline"></div>
+
+                <div class="chargeTable">
+                    <table>
+                        <tr>
+                            <th colspan="3">이용금액</th>
+                        </tr>
+
+                        <tr>
+                            <td>어른</td>
+                            <td colspan="2">26,000 원</td>
+                        </tr>
+
+                        <tr>
+                            <td>청소년</td>
+                            <td colspan="2">16,000 원</td>
+                        </tr>
+
+                        <tr>
+                            <td>어린이</td>
+                            <td colspan="2">15,000 원</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="entrance">
+                <div class="hole H01"></div>
+                <div class="hole H02"></div>
+                <img src="images/charge/icon_character.png" alt="">
+
+                <div class="ET_text">
+                    <div class="tickettitle">
+                        <h1>자유이용권</h1>
+                    </div>
+
+                    <div class="ticketcontent" id="ticketcontent">
+                        <p>이월드 입장권혜택</p>
+                        <p>+</p>
+                        <p>놀이기구 이용</p>
+                        <p>+</p>
+                        <p>83타워 매직아트 이용</p>
+                        <p>+</p>
+                        <p>아이스링크 주중할인혜택</p>
+                    </div>
+                </div>
+
+                <div class="centerline"></div>
+
+                <div class="chargeTable">
+                    <table>
+                        <tr>
+                            <th colspan="3">이용금액</th>
+                        </tr>
+
+                        <tr>
+                            <td>어른</td>
+                            <td colspan="2">45,000 원</td>
+                        </tr>
+
+                        <tr>
+                            <td>청소년</td>
+                            <td colspan="2">40,000 원</td>
+                        </tr>
+
+                        <tr>
+                            <td>어린이</td>
+                            <td colspan="2">35,000 원</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <div class="eventbtn">
+                GO! 할인혜택보기
+            </div>
+        </div>
+        <!--입장요금안내 끝-->
+
+        <!--야간이용권 시작-->
+        <div class="ticket_02">
+            <div class="title">
+                <h1><span>야간자유이용권안내</span></h1>
+            </div>
+
+            <div class="T_wrap">
+                <div class="afterticket">
+                    <img src="images/charge/icon_logo.png" alt="">
+
+                    <div class="ET_text" id="after_text">
+                        <div class="tickettitle">
+                            <h1>AFTER5 자유이용권</h1>
+                        </div>
+
+                        <div class="ticketcontent">
+                            <p>이월드 입장권혜택</p>
+                            <p>+</p>
+                            <p>놀이기구 이용</p>
+                            <p>+</p>
+                            <p>아이스링크 주중할인혜택</p>
+                            <p>+</p>
+                            <p>별빛축제 관람</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afterticket">
+                    <div class="chargeTable" id="afterchargeTable">
+                        <table style="height: 230px;">
+                            <tr>
+                                <th colspan="3">이용금액</th>
+                            </tr>
+
+                            <tr>
+                                <td>어른</td>
+                                <td colspan="2">31,000 원</td>
+                            </tr>
+
+                            <tr>
+                                <td>청소년</td>
+                                <td colspan="2">29,000 원</td>
+                            </tr>
+
+                            <tr>
+                                <td>어린이</td>
+                                <td colspan="2">29,000 원</td>
+                            </tr>
+                        </table>
+
+                        <div class="condition2">
+                            <h2>참고사항</h2>
+                            <p>● 야간자유이용권은 평일/주말 17:00 ~ 폐장시간까지 적용됩니다.</p>
+                            <p>● 야간자유이용권은 타 할인혜택과 중복하여 사용하실 수 없습니다.</p>
+                            <p>● 입장권은 야간할인적용 대상이 아닙니다.</p>
+                            <p>● 83타워 전망대(엘리베이터)는 유료요금 시설로 별도 이용요금을 지불하셔야 합니다.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="title">
+                <h1><span>장애인/국가유공자</span></h1>
+            </div>
+
+            <div class="T_wrap">
+                <div class="afterticket">
+                    <img src="images/charge/icon_logo.png" alt="">
+
+                    <div class="ET_text" id="after_text2">
+                        <div class="tickettitle">
+                            <h1>자유이용권</h1>
+                        </div>
+
+                        <div class="ticketcontent">
+                            <p>이월드 입장권혜택</p>
+                            <p>+</p>
+                            <p>놀이기구 이용</p>
+                            <p>+</p>
+                            <p>83타워 매직아트 이용</p>
+                            <p>+</p>
+                            <p>아이스링크 주중할인혜택</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="afterticket">
+                    <div class="chargeTable" id="afterchargeTable2">
+                        <table style="height: 230px;">
+                            <tr>
+                                <th colspan="3">이용금액</th>
+                            </tr>
+
+                            <tr>
+                                <td>어른</td>
+                                <td colspan="2">22,500 원</td>
+                            </tr>
+
+                            <tr>
+                                <td>청소년</td>
+                                <td colspan="2">20,000 원</td>
+                            </tr>
+
+                            <tr>
+                                <td>어린이</td>
+                                <td colspan="2">17,500 원</td>
+                            </tr>
+                        </table>
+
+                        <div class="condition2">
+                            <h2>참고사항</h2>
+                            <p>● 해당되시는 고객본인을 포함한 동반1인까지 할인요금이 적용됩니다.</p>
+                            <p>● 복지카드 또는 국가유공자증을 지참하시면 할인혜택을 받으실 수 있습니다.</p>
+                            <p>● 타 할인혜택과 중복하여 사용하실 수 없습니다.</p>
+                            <p>● 종일자유이용권 기준 우대가입니다 (야간자유이용권 적용불가).</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="ticket_03">
+            <div class="check">
+                <h2><i class="fas fa-check"></i>꼭 알아두세요!</h2>
+                <p>● 어린이요금 적용기준 : 36개월 이상~13세, 청소년요금 적용기준 : 14세~19세
+                    ( 만나이가 아닌 주민등록증상의 나이를 기준으로 적용됩니다. )</p>
+                <p>● 학생증 및 건강보험증 등 나이를 확인할 수 있는 서류를 반드시 지참해주세요.</p>
+                <p>● 자유이용권은 입장료가 포함된 가격입니다.</p>
+                <p>● 35개월 이하 어린이 고객은 무료입장입니다.(어린이기종 이용시에는 티켓을 구입)</p>
+                <p>● 65세 이상 고객은 경로우대증이나 주민등록증을 제시하시면 청소년 요금을 적용해 드립니다.</p>
+                <p>● 주차요금, 코인시설물, 타워 일부시설물, 시즌별 이벤트시설물은 별도 이용요금이 적용됩니다.</p>
+                <p>● 개인썰매, 전동자동차, 스쿠터, 유아자전거, 퀵보드, 애완견은 이월드 내 반입이 되지않습니다.</p>
+            </div>
+        </div>
+        <!--야간이용권 끝-->
+    </contents>
+    <!--내용 끝-->
+
+    <!--엔딩 시작-->
+    <footer>
+        <div class="foot_wrap">
+            <div class="sns">
+                <div class="icon">
+                    <i class="fab fa-facebook-square"></i>
+                    <i class="fab fa-youtube"></i>
+                    <i class="fab fa-instagram"></i>
+                    <img src="images/ico_naverblog.png" alt="Naver blog icon">
+                    <img src="images/ico_kakaotalk.png" alt="kakao logo icon">
+                </div>
+
+                <div class="btn" id="btn1">
+                    <a href="#">채용/아르바이트 모집</a>
+                </div>
+
+                <div class="btn" id="btn2">
+                    <a href="#">제휴/입점업체 문의</a>
+                </div>
+
+            </div>
+            <div class="information">
+                <p>대구광역시 달서구 두류공원로 200 (주)이월드 l 종합안내전화 053-620-0001 l 연간회원문의 053-620-0100</p>
+                <p>대표이사 : 유병천 l 사업자등록번호 503-81-68487 l 통신판매신고번호 제2011-대구달서-0301호</p>
+                <p>COPYRIGHTⓒ E-WORLD. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </footer>
+    <!--엔딩 끝-->
+</body>
+
+
+</html>

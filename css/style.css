@@ -1,0 +1,2301 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Jua', sans-serif, "aial";
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+}
+
+li {
+    list-style: none;
+}
+
+@media screen and (max-width:599px) {
+    :root {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1119px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+
+/*HEADER영역*/
+header {
+    width: 100%;
+}
+
+/*--이동 로그인 영역(head01)*/
+
+.head01_wrap {
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+}
+
+.head01 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 35px;
+    line-height: 30px;
+    padding: 3px 0;
+}
+
+.head01 a {
+    color: #000;
+}
+
+.site,
+.login {
+    display: inline;
+}
+
+.site {
+    float: left;
+}
+
+.site a {
+    margin-right: 10px;
+}
+
+.site img {
+    width: 25px;
+    height: 20px;
+    text-align: center;
+    float: left;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.login {
+    float: right;
+}
+
+@media screen and (max-width:599px) {
+    .head01 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .head01 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .head01 {
+        max-width: 1000px;
+    }
+}
+
+
+/*--헤더 메뉴 영역(head02)*/
+
+.head02 {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background-color: #fff;
+}
+
+.head02_wrap {
+    width: 1200px;
+    height: inherit;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+/*헤더 메뉴_고정 클래스*/
+.menu-fixed {
+    width: 100%;
+    z-index: 100;
+    margin: 0 auto;
+    position: fixed;
+    top: 0px;
+    left: 0%;
+}
+
+/*---------------*/
+
+.logo {
+    display: inline-block;
+    width: 15%;
+    max-width: 200px;
+    height: 100px;
+    float: left;
+    text-align: center;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.header_menu {
+    display: inline-block;
+    width: 66.68%;
+    height: inherit;
+}
+
+.header_menu ul {
+    width: 100%;
+    max-height: 400px;
+}
+
+.header_menu li {
+    width: 150px;
+    height: 100%;
+    line-height: 80px;
+    display: inline-block;
+    float: left;
+    text-align: center;
+}
+
+.header_menu a {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 10px;
+}
+
+.header_menu a:hover {
+    color: #FBAA2F;
+}
+
+.head_menu2 {
+    display: none;
+    border-top: 3px solid #FBAA2F;
+    border-right: 1px dotted #FBAA2F;
+    height: 300px;
+}
+
+.head_menu2 li {
+    width: 150px;
+    height: 40px;
+    margin: 0 auto;
+    line-height: 20px;
+    padding: 3px;
+}
+
+.head_menu2 li a {
+    font-size: 0.9rem;
+}
+
+.head_menu2 a:hover {
+    border-bottom: 2px solid #FBAA2F;
+}
+
+.time {
+    display: inline-block;
+    margin-top: 20px;
+    width: 200px;
+    height: inherit;
+    float: right;
+    text-align: right;
+}
+
+.time img {
+    width: 40px;
+    margin-top: 10px;
+    float: left;
+}
+
+.time p {
+    font-weight: bold;
+    line-height: 1.3;
+    font-size: 1.2rem;
+}
+
+.time span {
+    font-size: 1.3rem;
+}
+
+#hamburger {
+    display: none;
+}
+
+@media screen and (max-width:799px) {
+
+    .header,
+    head01,
+    .head02 {
+        background-color: #FBAA2F;
+    }
+
+    .head02_wrap {
+        width: 100%;
+        height: inherit;
+    }
+
+    .logo {
+        display: inline-block;
+        width: 15%;
+        max-width: 100px;
+        height: 50px;
+        margin-left: 10px;
+    }
+
+    .logo img {
+        margin-top: 0;
+        width: 80px;
+    }
+
+    .header_menu {
+        width: 100%;
+        display: none;
+    }
+
+    .header_menu li {
+        display: block;
+        width: 100%;
+        line-height: 50px;
+    }
+
+
+    .list {
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .header_menu a {
+        font-size: 1.2rem;
+        color: #000;
+    }
+
+    .header_menu a:hover {
+        color: #000;
+    }
+
+    .head_menu2 {
+        display: none !important;
+        border-top: none;
+        border-right: none;
+        height: 300px;
+    }
+
+    .head_menu2 li {
+        width: 100%;
+        height: 50px;
+        margin: 0 auto;
+        line-height: 5px;
+        padding: 10px;
+        background-color: #fff;
+    }
+
+    .head_menu2 li a {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .head_menu2 li a:hover {
+        color: #FBAA2F;
+    }
+
+    .time {
+        display: none;
+    }
+
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        display: inline-block;
+        float: right;
+        color: #fff;
+        font-size: 35px;
+        margin-right: 15px;
+        margin-top: 5px;
+        cursor: pointer;
+        z-index: 1000;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .head02_wrap {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .logo img {
+        margin-top: 0;
+        width: 130px;
+    }
+
+    .header_menu {
+        width: 70%;
+    }
+
+    .header_menu li {
+        width: 20%;
+        height: inherit;
+        display: inline-block;
+        float: left;
+        text-align: center;
+    }
+
+    .header_menu a {
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        padding-top: 10px;
+    }
+
+    .head_menu2 li {
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        line-height: 10px;
+        padding: 3px;
+    }
+
+    .head_menu2 li a {
+        font-size: 0.7rem;
+    }
+
+    .time {
+        width: 15%;
+    }
+
+    .time img {
+        width: 30px;
+    }
+
+    .time p {
+        line-height: 1.3;
+        font-size: 1.8vw;
+    }
+
+    .time span {
+        font-size: 1.5vw;
+    }
+}
+
+/*콘텐츠 영역*/
+/*--top*/
+.top {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 10%;
+    text-align: center;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.top i {
+    color: #FBAA2F;
+    font-size: 50px;
+    text-shadow: 1px 1px 3px #000;
+}
+
+.top p {
+    font-size: 1.2rem;
+    color: #FBAA2F;
+    text-shadow: 1px 1px 3px #000;
+}
+
+/*--con_01(banner)영역*/
+.con_01 {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.banner > div {
+    width: 100%;
+    max-width: 2000px;
+    height: 100%;
+}
+
+.banner a {
+    width: 100%;
+    max-width: 2000px;
+    margin: 0 auto;
+    display: block;
+    line-height: 650px;
+    text-align: center;
+    font-size: 0;
+}
+
+.slick-dots {
+    display: inline-block;
+    float: center;
+    list-style: none;
+    bottom: 40px;
+    right: -46%;
+    position: relative;
+    width: 300px;
+}
+
+.slick-dots li {
+    display: inline-block;
+}
+
+.slick-dots button {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 20px;
+    font-size: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+
+.slick-active button {
+    background-color: #000;
+}
+
+#mobile_banner {
+    display: none;
+}
+
+@media screen and (max-width:599px) {
+    .con_01 {
+        width: 100%;
+        min-width: 450px;
+        margin: 60px auto;
+    }
+
+    .banner {
+        width: 100%;
+        height: 550px;
+        margin: 0 auto;
+    }
+
+    .banner > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner a {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        line-height: normal;
+        text-align: center;
+        font-size: 0;
+    }
+
+    .slick-dots {
+        bottom: -10px;
+        right: -40%;
+    }
+
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+        background-color: #ccc;
+    }
+
+    .slick-active button {
+        background-color: #FBAA2F;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .banner a {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        line-height: 550px;
+        text-align: center;
+        font-size: 0;
+    }
+
+    #mobile_banner {
+        display: block;
+    }
+
+    #web_banner {
+        display: none;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .con_01 {
+        width: 100%;
+        min-width: 650px;
+        margin: 60px auto;
+    }
+
+    .banner {
+        width: 100%;
+        height: 100%;
+        max-height: 650px;
+        margin: 0 auto;
+    }
+
+    .banner > div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .banner a {
+        width: 100%;
+        max-height: 650px;
+        margin: 0 auto;
+        display: block;
+        line-height: normal;
+        text-align: center;
+        font-size: 0;
+    }
+
+    .slick-dots {
+        bottom: -10px;
+        right: -40%;
+    }
+
+    .slick-dots button {
+        width: 15px;
+        height: 15px;
+        background-color: #ccc;
+    }
+
+    .slick-active button {
+        background-color: #FBAA2F;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        text-align: center;
+        cursor: pointer;
+        z-index: 10000;
+    }
+
+    .banner a {
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        line-height: 650px;
+        text-align: center;
+        font-size: 0;
+    }
+
+    #mobile_banner {
+        display: block;
+    }
+
+    #web_banner {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    #mobile_banner {
+        display: none;
+    }
+}
+
+/*--con_02(스마트예약)영역*/
+.con_02 {
+    width: 100%;
+    height: 500px;
+}
+
+.con2_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto;
+}
+
+/*안전한이월드 공지 배너*/
+.notice {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 150px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 3px solid #ccc;
+}
+
+.notice:hover {
+    cursor: pointer;
+    filter: brightness(95%);
+}
+
+@media screen and (max-width:599px) {
+    .con_02 {
+        height: 650px;
+    }
+
+    .con2_wrap {
+        margin: 10px auto;
+    }
+
+    .notice {
+        margin-top: 20px;
+        height: 70px;
+        border: 1px solid #ccc;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .con_02 {
+        height: 650px;
+    }
+
+    .notice {
+        margin-top: 20px;
+        height: 90px;
+        border: 1px solid #ccc;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .notice {
+        max-width: 1000px;
+        height: 120px;
+        background-size: cover;
+    }
+}
+
+/*스마스예약/ 온라인 스토어*/
+.smart_reservation {
+    display: inline-block;
+    width: 48%;
+    height: 305px;
+    margin-top: 30px;
+    margin-right: 2%;
+    overflow: hidden;
+    border: 1px solid #FBAA2F;
+    float: left;
+}
+
+.smart_reservation h1 {
+    background-color: #FBAA2F;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border: 1px solid #FBAA2F;
+    letter-spacing: 2px;
+}
+
+.smart_reservation > div {
+    display: inline-block;
+    width: 50%;
+    float: left;
+    height: 119.5px;
+    line-height: 119.5px;
+    text-align: center;
+    border: 1px solid #FBAA2F;
+    border-collapse: collapse;
+}
+
+.smart_reservation > div:hover {
+    cursor: pointer;
+    background-color: #FBAA2F;
+    color: #fff;
+}
+
+.smart_reservation > div:hover a {
+    color: #fff;
+}
+
+.smart_reservation i {
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+
+.smart_reservation a {
+    font-size: 1.1rem;
+}
+
+.online_store {
+    display: inline-block;
+    margin-top: 30px;
+    width: 48%;
+    height: 306px;
+    margin-left: 2%;
+    overflow: hidden;
+    float: right;
+    border: 2px solid #FFCF13;
+}
+
+.online_store h1 {
+    background-color: #FFCF13;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.35rem;
+    font-weight: bold;
+    border: 2px solid #FFCF13;
+    border-bottom: 0;
+    letter-spacing: 2px;
+}
+
+.online_store img {
+    height: 241px;
+}
+
+.online_store img:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+@media screen and (max-width:799px) {
+
+    .smart_reservation {
+        display: inline-block;
+        width: 100%;
+        height: 250px;
+        margin-top: 0;
+    }
+
+    .smart_reservation > div {
+        height: 105px;
+        line-height: 105px;
+        text-align: center;
+        border: 1px solid #FBAA2F;
+        border-collapse: collapse;
+    }
+
+    .smart_reservation h1,
+    .online_store h1 {
+        padding: 5px 0;
+    }
+
+    .smart_reservation a {
+        font-size: 1.2rem;
+    }
+
+    .online_store {
+        display: inline-block;
+        margin-top: 20px;
+        width: 100%;
+        height: 250px;
+    }
+
+    .online_store img {
+        object-fit: fill;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .con2_wrap {
+        max-width: 1000px;
+    }
+}
+
+/*--con_03영역(할인 이벤트 영역)*/
+.con_03 {
+    clear: both;
+    width: 100%;
+    margin: 30px auto;
+}
+
+.con3_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.con_03 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 200px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border: 3px solid #FBAA2F;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    font-weight: bold;
+    background-color: #FBAA2F;
+    border-radius: 20px;
+    padding: 30px 20px;
+}
+
+.more {
+    width: 300px;
+    border-radius: 30px;
+    padding: 15px 0;
+    background-color: #FBAA2F;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.more:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width:599px) {
+    .con_03 {
+        margin-top: 0;
+    }
+
+    .con_03 h1 {
+        margin-top: 0;
+    }
+
+    .swiper-container {
+        height: 180px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .swiper-container {
+        height: 150px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .swiper-container {
+        height: 150px;
+    }
+}
+
+/*--con_04(어트랙션)영역*/
+.con_04 {
+    width: 100%;
+    height: 100%;
+    max-height: 1010px;
+}
+
+.con4_wrap {
+    width: 100%;
+    max-width: 1200px;
+    height: 1010px;
+    margin: 0 auto;
+}
+
+.con_04 h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.con_04 .AT {
+    display: inline-block;
+    width: 20%;
+    max-width: 240px;
+    float: left;
+    text-align: center;
+}
+
+.con_04 .AT p {
+    font-size: 1.2rem;
+}
+
+.attraction_icon {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 200px;
+}
+
+
+.attraction_icon img {
+    width: 50%;
+}
+
+.attraction_icon img:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+.map {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    max-height: 650px;
+    background-image: url(../images/map_01.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.box {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.more2 {
+    display: inline-block;
+    width: 300px;
+    border-radius: 30px;
+    padding: 15px 0;
+    background-color: #FBAA2F;
+    text-align: center;
+    margin: 30px auto;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+.more2:hover {
+    color: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width:599px) {
+    .con_04 {
+        max-height: 550px;
+    }
+
+    .con4_wrap {
+        max-height: 600px;
+    }
+
+    .map {
+        max-height: 250px;
+        background-size: cover;
+    }
+
+    .attraction_icon {
+        max-height: 80px;
+    }
+
+    .con_04 .AT {
+        width: 20%;
+        float: left;
+        text-align: center;
+    }
+
+    .con_04 .AT p {
+        font-size: 0.8em;
+    }
+
+    .attraction_icon img {
+        width: 50%;
+        min-width: 50px;
+    }
+
+    .more2 {
+        width: 40%;
+        max-width: 200px;
+        font-size: 1em;
+        padding: 3% 0;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .con_04 {
+        max-height: 750px;
+    }
+
+    .con4_wrap {
+        max-height: 750px;
+    }
+
+    .map {
+        max-height: 400px;
+        background-size: cover;
+    }
+
+    .attraction_icon {
+        max-height: 130px;
+    }
+
+    .con_04 .AT {
+        width: 20%;
+        min-width: 90px;
+        float: left;
+        text-align: center;
+    }
+
+    .attraction_icon img {
+        width: 50%;
+        min-width: 80px;
+    }
+
+    .more2 {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .con_04 {
+        max-height: 800px;
+    }
+
+    .con4_wrap {
+        max-height: 800px;
+    }
+
+    .map {
+        max-height: 500px;
+        background-size: cover;
+    }
+
+    .attraction_icon {
+        max-height: 150px;
+    }
+
+    .attraction_icon img {
+        width: 50%;
+        min-width: 90px;
+    }
+}
+
+/*--con_05(체험 프로그램)영역*/
+.con_05 {
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.con5_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.con_05 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imgbox {
+    width: 100%;
+    height: 400px;
+    text-align: center;
+}
+
+.program {
+    display: inline-block;
+    width: 100%;
+    max-width: 350px;
+    height: 100%;
+    max-height: 400px;
+}
+
+.program:nth-last-of-type(2) {
+    margin: 0 50px;
+}
+
+.program:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+@media screen and (max-width:799px) {
+    .con_05 {
+        display: none;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .con5_wrap {
+        max-width: 1000px;
+    }
+
+    .imgbox {
+        height: 400px;
+    }
+
+    .program {
+        display: inline-block;
+        width: 33.33%;
+        max-width: 300px;
+        height: 100%;
+        max-height: 400px;
+    }
+
+    .program:nth-last-of-type(2) {
+        margin: 0 10px;
+    }
+}
+
+/*--con_06(이벤트)영역*/
+.con_06 {
+    width: 100%;
+    height: 700px;
+    margin: 100px auto 30px auto;
+}
+
+.con6_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.con_06 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.imgbox2 {
+    width: 100%;
+    max-width: 1200px;
+    height: 600px;
+}
+
+.imgbox2 img {
+    float: left;
+}
+
+.imgbox2 img:hover {
+    cursor: pointer;
+    filter: brightness(80%);
+}
+
+@media screen and (max-width:799px) {
+    .con_06 {
+        margin-top: 0;
+    }
+
+    .imgbox2 img {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .con_06 {
+        width: 100%;
+        height: 500px;
+        margin: 0;
+    }
+
+    .con6_wrap {
+        max-width: 1000px;
+    }
+
+    .imgbox2 img {
+        width: 25%;
+    }
+
+}
+
+/*--푸터영역*/
+footer {
+    margin-top: 50px;
+    clear: both;
+    width: 100%;
+    background-color: #3d3d3d;
+}
+
+.foot_wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 100px 30px 100px;
+    text-align: center;
+    background-color: #3d3d3d;
+}
+
+.sns {
+    width: 100%;
+    max-width: 1200px;
+    height: 35px;
+    margin: 0 auto 15px auto;
+}
+
+.icon i {
+    color: #000;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.icon img {
+    margin-right: 10px;
+    filter: brightness(0);
+    cursor: pointer;
+    width: 100%;
+    max-width: 30px;
+}
+
+.sns > div {
+    display: inline-block;
+}
+
+.btn {
+    border: 2px solid #000;
+    border-radius: 10px;
+    padding: 5px;
+    margin-left: 15px;
+    float: center;
+}
+
+.information p {
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:799px) {
+    .foot_wrap {
+        padding: 30px;
+    }
+
+    .foot_wrap > div {
+        display: block;
+    }
+
+    .sns {
+        width: 100%;
+        max-width: 799px;
+        height: 70px;
+        margin-bottom: 20px;
+    }
+
+    .icon i {
+        font-size: 40px;
+    }
+
+    .icon img {
+        max-width: 40px;
+    }
+
+    .icon {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .btn a {
+        font-size: 0.9em;
+    }
+
+    #btn1 {
+        display: inline-block;
+        width: 40%;
+        max-width: 300px;
+        min-width: 100px;
+    }
+
+    #btn2 {
+        display: inline-block;
+        width: 40%;
+        max-width: 300px;
+        min-width: 100px;
+        margin: 0;
+    }
+
+    .information {
+        clear: both;
+        max-width: 799px;
+        margin: 0;
+    }
+
+    .information p {
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .sns {
+        max-width: 1000px;
+    }
+}
+
+
+/*____Sub Attraction 페이지 영역*/
+/*배너영역*/
+.ATcon_01 {
+    width: 100%;
+    height: 500px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.sub_txt p {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sub_txt a {
+    color: #fff;
+    font-size: 20px;
+}
+
+.sub_txt {
+    color: #fff;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    z-index: 10;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+#Menu_list,
+#Attraction_list {
+    width: 160px;
+    padding: .5em;
+    font-family: inherit;
+    background: none;
+    border: none;
+    border-radius: 0px;
+    background: url(../images/attraction/icon_banner.png) no-repeat 90% 45%;
+    background-size: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+option {
+    font-size: 1em;
+    padding: 0.5em;
+    color: #000;
+}
+
+.sub_txt2 {
+    position: absolute;
+    top: 280px;
+    left: 38%;
+    z-index: 10;
+}
+
+.sub_txt2 h1 {
+    font-size: 2.5vw;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 4px 2px 2px #000;
+}
+
+@media screen and (max-width:799px) {
+    .wrap {
+        width: 100%;
+    }
+
+    .sub_txt {
+        top: 60px;
+        left: 20px;
+        z-index: 10;
+    }
+
+    .sub_txt2 {
+        top: 250px;
+        left: 25%;
+        z-index: 10;
+    }
+
+    .sub_txt2 h1 {
+        font-size: 8vw;
+    }
+
+    .sub_txt a {
+        font-size: 15px;
+    }
+
+    #Menu_list,
+    #Attraction_list {
+        width: 120px;
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .wrap {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+    .sub_txt {
+        left: 20px;
+        z-index: 10;
+    }
+
+    .sub_txt2 {
+        left: 32%;
+    }
+
+    .sub_txt2 h1 {
+        font-size: 5vw;
+    }
+
+}
+
+/*검색영역*/
+.ATcon_02 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 30px auto;
+    background-color: #FBAA2F;
+    padding: 1.7% 5%;
+    text-align: center;
+}
+
+.ATcon_02 i {
+    margin-left: 10px;
+}
+
+.ATcon_02 h1 {
+    margin: 20px 0;
+    font-size: 1.7em;
+}
+
+input {
+    width: 75%;
+    height: 50px;
+    font-size: 1.5em;
+    letter-spacing: 0.1em;
+    padding: 0 20px;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    color: #000;
+}
+
+button {
+    width: 15%;
+    height: 50px;
+    margin-left: 5%;
+    font-size: 1.4em;
+    border: 2px solid #fff;
+    border-radius: 30px;
+    background-color: #fff;
+    color: #3d3d3d;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+#search {
+    margin-bottom: 15px;
+}
+
+#Attraction {
+    margin-right: 3%;
+    float: left;
+}
+
+.ATcon_02 select {
+    width: 17%;
+    height: 50px;
+    font-size: 1.3em;
+    border: none;
+    background-color: #fff;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 0 25px;
+}
+
+.ATcon_02 option {
+    font-size: 1em;
+}
+
+#qualification {
+    margin-top: 15px;
+}
+
+#Msearch {
+    display: none;
+}
+
+.ATcon_02 i {
+    display: none;
+}
+
+.height {
+    float: left;
+    display: inline-block;
+    width: 17%;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 30px;
+    font-size: 1.3em;
+    line-height: 50px;
+}
+
+.bar {
+    display: inline-block;
+    width: 60%;
+    height: 80px;
+    position: relative;
+}
+
+#slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 10px;
+    outline: none;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+}
+
+#slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 20;
+    position: relative;
+    padding: 25px;
+}
+
+#slector {
+    height: 100px;
+    width: 80px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-100%);
+    z-index: 2;
+}
+
+.selectbtn {
+    bottom: 25px;
+    left: 25px;
+    height: 45px;
+    width: 45px;
+    background-image: url(../images/attraction/icon_barbtn.png);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: absolute;
+    line-height: 45px;
+    z-index: 10;
+
+}
+
+datalist {
+    display: inline-block;
+    width: 100%;
+}
+
+datalist option {
+    color: #ddd;
+    opacity: 0.8
+}
+
+@media screen and (max-width:799px) {
+    .ATcon_02 {
+        margin-top: 0;
+        width: 100%;
+        padding-top: 10px;
+    }
+
+    .ATcon_02 h1 {
+        margin: 10px 0;
+        font-size: 1.5em;
+    }
+
+    input {
+        width: 100%;
+        height: 35px;
+        font-size: 1.2em;
+    }
+
+    button {
+        display: none;
+    }
+
+    #Attraction {
+        width: 45%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .ATcon_02 select {
+        width: 40%;
+        height: 30px;
+        font-size: 1.2em;
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+
+    #Msearch {
+        display: block;
+    }
+
+    .condition {
+        display: none;
+    }
+
+    .height {
+        width: 30%;
+        height: 30px;
+        line-height: 30px;
+        float: none;
+        display: none;
+        padding: 0 10px;
+        margin: 10px auto 0 auto;
+    }
+
+    .ATcon_02 i {
+        width: 100%;
+        display: block;
+        font-size: 50px;
+        height: 30px;
+        cursor: pointer;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 10px;
+    }
+
+    .ATcon_02 .fa-sort-up {
+        clear: both;
+        display: none;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .bar {
+        display: none;
+        padding-top: 30px;
+        width: 100%;
+        height: 80px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+
+    #slider {
+        width: 100%;
+    }
+
+    #slider::-webkit-slider-thumb {
+        padding: 23px;
+    }
+
+    .selectbtn {
+        bottom: 0;
+        left: 23.5px;
+    }
+
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .wrap {
+        width: 100%;
+        max-width: 1000px;
+    }
+
+}
+
+/*놀이기구 영역*/
+
+.ATcon_03 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.attraction {
+    float: left;
+    display: inline-block;
+    width: 24%;
+    height: 400px;
+    margin-right: 0.5%;
+    margin-left: 0.5%;
+    margin-bottom: 1%;
+    position: relative;
+}
+
+.attraction:hover {
+    cursor: pointer;
+    box-shadow: 3px 8px 10px;
+}
+
+.rocation {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.rocation p {
+    display: inline-block;
+}
+
+.fantasy {
+    background-color: #ae1e23;
+}
+
+.fantasy img {
+    width: 100%;
+    border: 3px solid #ae1e23;
+}
+
+.dynamic {
+    background-color: #412866;
+}
+
+.dynamic img {
+    width: 100%;
+    border: 3px solid #412866;
+}
+
+
+.adventure {
+    background-color: #8a2563;
+}
+
+.adventure img {
+    width: 100%;
+    border: 3px solid #8a2563;
+}
+
+
+.magic {
+    background-color: #2c1609;
+}
+
+.magic img {
+    width: 100%;
+    border: 3px solid #2c1609;
+}
+
+.skygarden {
+    background-color: #ed9249;
+}
+
+.skygarden img {
+    width: 100%;
+    border: 3px solid #ed9249;
+}
+
+.text {
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    letter-spacing: 0;
+    line-height: 1;
+}
+
+.text h1 {
+    font-size: 1.5em;
+    letter-spacing: 0.2em;
+}
+
+.text small {
+    font-size: 1em;
+}
+
+.attraction .text .limit {
+    margin-top: 10px;
+    font-weight: -500;
+    color: #ddd;
+    opacity: 0.8;
+    font-size: 0.9em;
+}
+
+.attraction .text .limit2 {
+    margin-top: 2px;
+    font-size: 0.9em;
+    font-weight: -500;
+    color: #ddd;
+    opacity: 0.8;
+}
+
+.text a {
+    color: #fff;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}
+
+.empty {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 100px auto;
+    color: #3d3d3d;
+    display: none;
+}
+
+.empty h1 {
+    font-size: 2em;
+}
+
+.empty small {
+    font-size: 1.2em;
+}
+
+@media screen and (max-width:599px) {
+    .attraction {
+        width: 48%;
+        height: 100%;
+        min-height: 300px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {
+    .attraction {
+        width: 32.33%;
+        height: 310px;
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:1199px) {
+    .attraction {
+        width: 32.33%;
+        min-height: 350px;
+        max-height: 400px;
+    }
+}
+
+/*____charge 페이지 영역*/
+/*입장권/자유이용권 영역*/
+.ticket_01 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 10px;
+}
+
+.title {
+    width: 50%;
+    text-align: center;
+    color: #000;
+    margin: 80px auto 50px auto;
+}
+
+.title h1 {
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 3px solid #FBAA2F;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.title h1 span {
+    background: #fff;
+    padding: 0 10px;
+}
+
+.entrance {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    background-color: #FBAA2F;
+    margin: 0 auto 30px auto;
+    border-radius: 30px;
+    position: relative;
+    z-index: -100;
+
+}
+
+.entrance img {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    top: 15%;
+    left: 13%;
+    z-index: -10;
+}
+
+.hole {
+    content: '';
+    background: #FFF;
+    left: -13px;
+    width: 40px;
+    height: 20px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 2px solid var(--border-grey);
+    border-bottom: 0;
+}
+
+.H01 {
+    position: absolute;
+    top: 48%;
+    left: -10px;
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.H02 {
+    position: absolute;
+    top: 48%;
+    left: 870px;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.ET_text {
+    display: inline-block;
+    width: 49%;
+    height: inherit;
+    text-align: center;
+    color: #fff;
+    float: left;
+}
+
+.tickettitle h1 {
+    width: 70%;
+    padding-top: 10px;
+    border-bottom: 3px solid #fff;
+    margin: 0 auto;
+    padding: 5% 1%;
+    letter-spacing: 5px;
+}
+
+tickettitle,
+.ticketcontent {
+    z-index: 1000;
+}
+
+.ticketcontent {
+    padding: 5%;
+    font-size: 1.5em;
+}
+
+.centerline {
+    display: inline-block;
+    border: 3px dashed #fff;
+    width: 0.1px;
+    height: 250px;
+    background-repeat: repeat-y;
+    background-image: linear-gradient(to bottom, #333 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: left;
+    background-size: 3px 20px;
+    line-height: 250px;
+    margin: 25px auto;
+    float: left;
+}
+
+.chargeTable {
+    width: 49%;
+    margin-top: 30px;
+    float: left;
+    display: inline-block;
+}
+
+table {
+    text-align: center;
+    width: 100%;
+    max-width: 320px;
+    background-color: #fff;
+    margin: 0 auto;
+    height: 250px;
+}
+
+table,
+tr,
+td,
+th {
+    border: 3px solid #fbaa2f;
+    border-collapse: collapse;
+    color: #fbaa2f;
+}
+
+th {
+    font-size: 1.5em;
+}
+
+td {
+    font-size: 1.3em;
+}
+
+#ticketcontent {
+    margin-top: 10px;
+}
+
+#ticketcontent p {
+    line-height: 23px;
+}
+
+.eventbtn {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    border: 3px solid #fbaa2f;
+    border-radius: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 1.4em;
+    color: #fbaa2f;
+}
+
+.eventbtn:hover {
+    cursor: pointer;
+    background-color: #ed9249;
+    color: #fff;
+}
+
+@media screen and (max-width:799px) {
+
+    .H01,
+    .H02 {
+        display: none;
+    }
+
+    .ticket_01 {
+        margin: 0 auto;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+        color: #000;
+        margin: 50px auto 50px auto;
+    }
+
+    .title h1 {
+        font-size: 2em;
+        text-align: center;
+        border-bottom: 3px solid #FBAA2F;
+        line-height: 0.1em;
+        margin: 10px 0 20px;
+    }
+
+    .entrance {
+        width: 100%;
+        max-width: 400px;
+        height: 600px;
+        background-color: #FBAA2F;
+        margin: 0 auto 30px auto;
+        border-radius: 30px;
+        position: relative;
+        z-index: -100;
+
+    }
+
+    .entrance img {
+        width: 230px;
+        height: 230px;
+        position: absolute;
+        top: 12%;
+        left: 21%;
+        z-index: -10;
+    }
+
+    .centerline {
+        display: none;
+    }
+
+    .ET_text {
+        display: block;
+        width: 100%;
+        color: #fff;
+        float: none;
+    }
+
+    .chargeTable {
+        width: 100%;
+        margin-top: 30px;
+        float: none;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+    }
+
+    table {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+
+/*야간자유이용권 영역*/
+.ticket_02 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.T_wrap {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.afterticket {
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    background-color: #fbaa2f;
+    z-index: -100;
+    position: relative;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+.afterticket img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    bottom: 5%;
+    left: 13%;
+    z-index: -10;
+}
+
+#after_text {
+    width: 100%;
+}
+
+#afterchargeTable {
+    width: 100%;
+    margin-top: 0;
+    padding: 8%;
+}
+
+.condition2 {
+    color: #fff;
+}
+
+#afterchargeTable .condition2 p {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#after_text h1 {
+    width: 90%;
+}
+
+#after_text2 {
+    width: 100%;
+}
+
+#afterchargeTable2 {
+    width: 100%;
+    margin-top: 0;
+    padding: 8%;
+}
+
+#afterchargeTable2 .condition2 p {
+    text-align: left;
+    font-size: 1.1em;
+}
+
+#after_text2 h1 {
+    width: 90%;
+}
+
+@media screen and (max-width:799px) {
+    .afterticket {
+        margin-bottom: 30px;
+    }
+
+    #afterchargeTable,
+    #afterchargeTable2 {
+        position: absolute;
+        top: 10px;
+    }
+}
+
+/*유의사항*/
+.ticket_03 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 50px auto 0 auto;
+}
+
+.check {
+    width: 100%;
+    max-width: 900px;
+    height: 300px;
+    margin: 0 auto 30px auto;
+    border-radius: 30px;
+    border: 3px dashed red;
+    position: relative;
+    z-index: -100;
+    padding: 3%;
+
+}
+
+.check i {
+    margin-right: 10px;
+}
+
+.check h2 {
+    margin-bottom: 15px;
+    color: red;
+}
+
+@media screen and (max-width:799px) {
+    .check {
+        height: 100%;
+        max-height: 400px;
+    }
+
+    .condition2 {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:799px) {}
+
+@media screen and (min-width:800px) and (max-width:1199px) {}
